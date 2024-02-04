@@ -88,7 +88,7 @@ const Modal = ({toggle}) => {
                     <label htmlFor="dob">Date of Birth:</label>
                     <input type="date" id="dob" name="dob" onChange={inputHandler} value={formdata.dob} required/>
 
-                    <button type="submit">Submit</button>
+                    <button type="submit" className="submit-button">Submit</button>
                 </form>
 
             </div>
