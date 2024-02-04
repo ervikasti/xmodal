@@ -3,13 +3,13 @@ import { useState } from "react"
 const Modal = ({toggle}) => {
 
     const styles = {
-        // container:{
-        //     width:'100%',
-        //     height:'100%',
-        //     top:'0',
-        //     bottom:'0',
-        //     right:'0',
-        // },
+        container:{
+            width:'100%',
+            height:'100%',
+            top:'0',
+            bottom:'0',
+            right:'0',
+        },
         overlay:{
             display:'flex',
             'justify-content':'center',
@@ -76,8 +76,8 @@ const Modal = ({toggle}) => {
     }
 
     return(
-        <div>
-            <div onClick={toggle} style={styles.overlay}></div>
+        <div className="modal" style={styles.container}>
+            <div className="modal" onClick={toggle} style={styles.overlay}></div>
             <div className="modal-content" style={styles.modal}>
                 <h2>Fill Details</h2>
                 <form style={styles.form} onSubmit={handleForm}>

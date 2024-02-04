@@ -14,7 +14,7 @@ function App() {
    <div>
        <h1>User Details Modal</h1>
        <button  onClick={handleClick}>Open Form</button>
-       <div className='modal'>{tooglemodal && (<Modal toggle={handleClick}/>)}</div>
+       {tooglemodal && (<Modal toggle={handleClick}/>)}
    </div>
   );
 }
