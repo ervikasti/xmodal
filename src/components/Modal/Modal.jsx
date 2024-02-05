@@ -76,7 +76,7 @@ const Modal = ({toggle}) => {
     }
 
     return(
-        <div style={styles.container}>
+        <div className="modal">
             <div className="modal" onClick={toggle} style={styles.overlay}></div>
             <div className="modal-content" style={styles.modal}>
                 <h2>Fill Details</h2>
